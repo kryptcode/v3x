@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    /* cursor: none; */
+    scrollbar-width: thin;
+}
+
+.section-80 {
+    /* perspective: 800px;
+    perspective-origin: top right; */
+    transform: rotateX(40deg) rotateY(350deg);
+    transition: all ease-in 300ms;
+}
+
+/* .section-80:hover {
+    
+    transform: rotateX(40deg) rotateY(270deg);
+} */
+
+.space-span {
+    color: transparent;
+    -webkit-text-stroke: 2.5px #6a139f;
+}
