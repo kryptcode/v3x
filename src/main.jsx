@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { RecoilRoot } from 'recoil';
 import App from './App'
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/works",
+    path: "/work",
     element: <Works />,
   },
   {
@@ -33,6 +34,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   </React.StrictMode>,
 )

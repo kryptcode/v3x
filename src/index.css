@@ -7,7 +7,7 @@
 }
 
 body {
-    /* cursor: none; */
+    cursor: none;
     scrollbar-width: thin;
 }
 
@@ -21,6 +21,10 @@ body {
 /* .section-80:hover {
     
     transform: rotateX(40deg) rotateY(270deg);
+} */
+
+/* .space-span {
+    
 } */
 
 .space-span {

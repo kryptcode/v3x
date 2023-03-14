@@ -1,18 +1,20 @@
 import { Cursor } from "react-creative-cursor"
-import 'react-creative-cursor/dist/styles.css';
-
-
+import { useRecoilValue } from "recoil"
+import { darkModeState } from "../../atoms"
 import Main from "../Home/Main"
 import Sections from "../Home/Sections"
-import Sidebar from "../Home/Sidebar"
+import Sidebar from "../Sidebar"
 
 function Home() {
+
+  const darkMode = useRecoilValue(darkModeState)
 
     return (
       <>
       {/* <Particle />  */}
-      <Cursor isGelly={true} />
-      <div data-cursor-size="20px" data-cursor-exclusion style={{backgroundColor: '#fff'}}  className='h-screen w-full flex flex-col md:flex-row justify-between md:space-x-8 px-4'>
+      
+      <div className={` ${darkMode ? 'bg-[#2b2b33] text-white ' : 'bg-white'} h-screen w-full flex flex-col md:flex-row justify-between px-4`}>
+        <Cursor isGelly={true} />
         <Sidebar />
         <Main />
         <Sections />

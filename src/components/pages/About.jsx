@@ -1,8 +1,12 @@
-import React from 'react'
+import { Cursor } from 'react-creative-cursor'
+import Sidebar from '../Sidebar'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <Cursor isGelly={true} />
+      <Sidebar />
+    </div>
   )
 }
 
