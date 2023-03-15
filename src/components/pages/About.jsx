@@ -1,11 +1,17 @@
-import { Cursor } from 'react-creative-cursor'
+import { useRecoilValue } from 'recoil'
+import { darkModeState } from '../../atoms'
+import Main from '../About/Main'
 import Sidebar from '../Sidebar'
 
+
 const About = () => {
+  const darkMode = useRecoilValue(darkModeState)
+
+
   return (
-    <div>
-      <Cursor isGelly={true} />
+    <div className={` ${darkMode ? 'bg-[#111] text-white ' : 'bg-white'} h-screen w-full flex flex-col md:flex-row justify-between px-4`}>
       <Sidebar />
+      <Main />
     </div>
   )
 }

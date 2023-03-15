@@ -7,10 +7,10 @@ const Sections = () => {
   const darkMode = useRecoilValue(darkModeState)
 
   return (
-    <div className='md:flex-[5] text-[3rem] md:text-[7.2rem] leading-none font-bold  flex flex-col md:justify-end md:items-center pb-5'>
+    <div className='md:flex-[5] text-[3rem] md:text-[7.5rem] leading-none font-bold  flex flex-col md:justify-end md:items-center pb-5'>
       <div className='md:space-y-12'>
       <div className='group transition-all duration-300 ease-in-out'>
-        <Link to='/about' className='cursor-none'>
+        <Link to='/about' className=''>
           <div>
           <span className='text-2xl'>
           01. {' '}
@@ -24,12 +24,12 @@ const Sections = () => {
       </div>
 
       <div className='group transition-all duration-300 ease-in-out'>
-        <Link to='/work' className='cursor-none'>
+        <Link to='/work' className=''>
           <div>
             <span className='text-2xl'>
             02. {' '}
             </span>
-            <span className={`${darkMode && 'text-[#6a139f] '}`}>
+            <span className={`${darkMode && 'text-white '}`}>
             WORK
             </span>
           </div>
@@ -38,7 +38,7 @@ const Sections = () => {
       </div>
 
       <div className='group transition-all duration-300 ease-in-out'>
-      <Link to='/contact' className='cursor-none'>
+      <Link to='/contact' className=''>
         <div>
         <span className='text-2xl'>
           03. {' '}

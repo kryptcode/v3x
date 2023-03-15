@@ -7,21 +7,7 @@ function App() {
 
   return (
     <>
-    {/* <BrowserRouter>
-    <Routes>
-          <Route
-            path='/'
-            index
-            element={
-                <Home />
-            }
-          />
-          <Route path="/about" element={<About />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/contact" element={<Contact />} />
-    </Routes>
-    </BrowserRouter> */}
-    200/warning
+      warn me no 
     </>
   )
 }

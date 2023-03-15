@@ -1,4 +1,3 @@
-import 'react-creative-cursor/dist/styles.css';
 import { useRecoilValue } from 'recoil';
 import Typewriter from 'typewriter-effect'
 import { darkModeState } from '../../atoms';
@@ -7,7 +6,7 @@ const Main = () => {
     const darkMode = useRecoilValue(darkModeState)
 
   return (
-    <div data-cursor-size="20px" data-cursor-exclusion className={`${darkMode ? 'bg-[#2b2b33] text-white/80' : 'bg-white'}  flex-[3] flex flex-col-reverse pb-11`}>
+    <div  className={`${darkMode ? 'bg-[#111] text-white/80' : 'bg-white'}  flex-[3] flex flex-col-reverse pb-11`}>
         
         <div>
             <div className='text-6xl font-bold'>

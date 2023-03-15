@@ -7,7 +7,6 @@
 }
 
 body {
-    cursor: none;
     scrollbar-width: thin;
 }
 
@@ -16,6 +15,11 @@ body {
     perspective-origin: top right; */
     transform: rotateX(40deg) rotateY(350deg);
     transition: all ease-in 300ms;
+}
+
+.noy {
+    scrollbar-width: thin;
+    height: 80vh;
 }
 
 /* .section-80:hover {
@@ -31,3 +35,19 @@ body {
     color: transparent;
     -webkit-text-stroke: 2.5px #6a139f;
 }
+
+.anim-img {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+  }

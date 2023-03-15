@@ -1,4 +1,3 @@
-import { Cursor } from "react-creative-cursor"
 import { useRecoilValue } from "recoil"
 import { darkModeState } from "../../atoms"
 import Main from "../Home/Main"
@@ -13,8 +12,7 @@ function Home() {
       <>
       {/* <Particle />  */}
       
-      <div className={` ${darkMode ? 'bg-[#2b2b33] text-white ' : 'bg-white'} h-screen w-full flex flex-col md:flex-row justify-between px-4`}>
-        <Cursor isGelly={true} />
+      <div className={` ${darkMode ? 'bg-[#111] text-white ' : 'bg-white'} h-screen w-full flex flex-col md:flex-row justify-between px-4`}>
         <Sidebar />
         <Main />
         <Sections />
