@@ -18,7 +18,7 @@ body {
 }
 
 .noy {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     height: 80vh;
 }
 
@@ -34,6 +34,10 @@ body {
 .space-span {
     color: transparent;
     -webkit-text-stroke: 2.5px #6a139f;
+}
+
+.work {
+    scrollbar-width: none;
 }
 
 .anim-img {

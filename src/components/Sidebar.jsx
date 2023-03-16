@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div data-cursor-size="20px" data-cursor-exclusion className={`${darkMode ? 'bg-[#111]': 'bg-white'} hidden flex-1 h-screen md:flex justify-center items-center`}>
+      <div data-cursor-size="20px" data-cursor-exclusion className={`${darkMode ? 'bg-[#111]': 'bg-white'} hidden w-[8rem] h-screen md:flex justify-center items-center`}>
         <div className='h-[90vh] w-full flex flex-col-reverse justify-between items-center'>
           <div className='-rotate-90' onClick={() => setDarkMode(!darkMode)}>
             <LightToggle />
