@@ -8,6 +8,7 @@
 
 body {
     scrollbar-width: thin;
+    background-color: #d1bfa7;
 }
 
 .section-80 {
@@ -39,6 +40,11 @@ body {
 .work {
     scrollbar-width: none;
 }
+
+/* .workMain {
+    animation: bounce;
+    animation-duration: 2s;
+}   */
 
 .anim-img {
     position: absolute;

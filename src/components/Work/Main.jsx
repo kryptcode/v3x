@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useRecoilValue } from 'recoil'
 import { darkModeState } from '../../atoms'
 import data from '../../data.json'
+import 'animate.css';
 
 const Main = () => {
   const darkMode = useRecoilValue(darkModeState)
@@ -11,28 +12,19 @@ const Main = () => {
   
 
   return (
-    <div className={`${darkMode ? 'bg-[#111] text-white/80' : 'bg-white'} h-screen  flex-[7] flex flex-col md:flex-row items-center pb-11`}>
+    <div className={`${darkMode ? 'bg-[#111] text-white/80' : 'bg-[#d1bfa7]'} h-screen  flex-[7] flex flex-col md:flex-row items-center pb-11`}>
         <div className='md:flex-1 transition-all ease-in-out duration-300'>
           {
-            project ? (
+            project && (
                 <div className={`  px-5 md:px-0`}>
-                  <img src={project.img} className={`${!darkMode && 'shadow shadow-xl shadow-black/50'} rounded-3xl transition-all ease-in-out duration-300`} alt="" />
+                  <img src={project.img} className={`${!darkMode && 'shadow-xl shadow-black/50'} rounded-3xl transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
                   <div>
                     {/* <p className='text-lg font-semibold'>
                       {project.description}
                     </p> */}
                   </div>
                 </div>
-              ) : (
-                <div>
-                  <div className='text-2xl font-semibold'>
-                    WORK
-                  </div>
-                  <div>
-                    This is as showcase of some of <br /> my work as a Frontend Web Developer
-                  </div>
-                </div>
-            )
+              )
           }
         </div>
 
@@ -54,7 +46,7 @@ const Main = () => {
                 return (
                 <div 
                   key={item.id} 
-                  className='p-2 text-[3rem] md:text-[6rem] leading-none font-bold group transition-all duration-300 ease-in-out' 
+                  className='p-2 text-[3rem] md:text-[6rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
                   onMouseOver={handleHover}
                 >
                   <Link to='/about' className=''>
