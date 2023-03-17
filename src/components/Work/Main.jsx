@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useRecoilValue } from 'recoil'
 import { darkModeState } from '../../atoms'
 import data from '../../data.json'
 import 'animate.css';
+import Arrow from '../custom/Arrow'
 
 const Main = () => {
   const darkMode = useRecoilValue(darkModeState)
@@ -19,9 +19,24 @@ const Main = () => {
                 <div className={`  px-5 md:px-0`}>
                   <img src={project.img} className={`${!darkMode && 'shadow-xl shadow-black/50'} rounded-3xl transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
                   <div>
-                    {/* <p className='text-lg font-semibold'>
-                      {project.description}
-                    </p> */}
+                    <p className='text-2xl mt-6 font-semibold'>
+                      {project.name}
+                    </p>
+                    <div className='space-x-5 underline my-4'>
+                    {
+                      project.techs.map(foo => (
+                        <span>
+                          {foo}
+                        </span>
+                      ))
+                    }
+                    </div>
+                    <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
+                      <Arrow />
+                      <a href={project.code_url} target='_blank' >
+                        Code Url
+                      </a>
+                    </button>
                   </div>
                 </div>
               )
@@ -49,7 +64,7 @@ const Main = () => {
                   className='p-2 text-[3rem] md:text-[6rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
                   onMouseOver={handleHover}
                 >
-                  <Link to='/about' className=''>
+                  <a href={item.live_url} className=''>
                   <div>
                   <span className='text-2xl'>
                   {`0${item.id} `}
@@ -59,7 +74,7 @@ const Main = () => {
                   </span>
                   </div>
                   <div className="h-1 w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
-                  </Link>
+                  </a>
                 </div>
               )})
             } 

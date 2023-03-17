@@ -44,7 +44,7 @@
         "name": "Streama",
         "description": "Streamin app powered by TMDb API",
         "bg": "#a7f3d0",
-        "techs": ["Next.js", "TMDb API", "TailwindCSS"],
+        "techs": ["Next.js", "TMDb API", "TailwindCSS", "Recoil"],
         "img": "https://i.ibb.co/CBB53LT/Screenshot-2023-03-15-at-23-12-47-Hulu-Clone.png",
         "live_url": "https://hulu-clone-rose-nine.vercel.app/",
         "code_url": "https://github.com/kryptcode/hulu-clone"
