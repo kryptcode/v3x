@@ -61,7 +61,7 @@ const Main = () => {
                 return (
                 <div 
                   key={item.id} 
-                  className='p-2 text-[3rem] md:text-[6rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
+                  className='p-2 text-[3rem] md:text-[5.8rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
                   onMouseOver={handleHover}
                 >
                   <a href={item.live_url} className=''>
