@@ -11,7 +11,7 @@ const Works = () => {
   const darkMode = useRecoilValue(darkModeState)
 
   return (
-    <div className={` ${darkMode ? 'bg-[#111] text-white ' : 'bg-[#d1bfa7]'} h-screen w-full flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeInDown`}>
+    <div className={` ${darkMode ? 'bg-[#111] text-white ' : 'bg-[#d1bfa7]'} md:h-screen w-full flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeInDown`}>
       <Cursor 
           isGelly={true}
           cursorSize={20}

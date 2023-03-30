@@ -31,12 +31,21 @@ const Main = () => {
                       ))
                     }
                     </div>
-                    <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
-                      <Arrow />
-                      <a href={project.code_url} target='_blank' >
-                        Code Url
-                      </a>
-                    </button>
+                    <div className='flex space-x-3 items-center'>
+                      <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
+                        <Arrow />
+                        <a href={project.code_url} target='_blank' >
+                          Code Url
+                        </a>
+                      </button>
+                      
+                      <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
+                        <Arrow />
+                        <a href={project.live_url} target='_blank' >
+                          Live Demo
+                        </a>
+                      </button>
+                    </div>
                   </div>
                 </div>
               )
@@ -63,8 +72,8 @@ const Main = () => {
                   key={item.id} 
                   className='p-2 text-[3rem] md:text-[5.8rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
                   onMouseOver={handleHover}
+                  onClick={handleHover}
                 >
-                  <a href={item.live_url} className=''>
                   <div>
                   <span className='text-2xl'>
                   {`0${item.id} `}
@@ -74,7 +83,6 @@ const Main = () => {
                   </span>
                   </div>
                   <div className="h-1 w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
-                  </a>
                 </div>
               )})
             } 
