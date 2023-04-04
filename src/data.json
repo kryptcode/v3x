@@ -51,12 +51,12 @@
     },
     {
         "id": 6,
-        "name": "Arch",
-        "description": "Multi-page website for arch studios",
+        "name": "C Rentals",
+        "description": "Multi-page website for car rental website",
         "bg": "#a7f3d0",
-        "techs": ["Next.js", "TMDb API", "TailwindCSS"],
-        "img": "https://i.ibb.co/0BDv1nL/Screenshot-2023-03-15-at-23-23-38-Arch-Studio-Home.png",
-        "live_url": "https://arch-studio-weld.vercel.app/",
-        "code_url": "https://github.com/kryptcode/arch-studio"
+        "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
+        "img": "https://i.ibb.co/sCX7NNm/Screenshot-2023-04-04-at-19-49-26-CRentals.png",
+        "live_url": "https://c-rentals.vercel.app",
+        "code_url": "https://github.com/kryptcode/c-rentals"
     }
 ]
