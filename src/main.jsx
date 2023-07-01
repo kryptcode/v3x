@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 import { RecoilRoot } from 'recoil';
 import App from './App'
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Home from './components/pages/Home';
-import Works from './components/pages/Works';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Works from './pages/Works';
 
 import './index.css'
 

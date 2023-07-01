@@ -3,17 +3,16 @@ import Arrow from "../custom/Arrow"
 const Main = () => {
   return (
     <div className="md:flex-[6] md:w-full w-[90%] mx-auto flex flex-col justify-center ">
-        <div className="pr-32 md:pr-72 pb-32 md:pb-0">
-            <h2 className="text-4xl font-bold">
+        <div className="w-full">
+            <h2 className="text-xl md:text-4xl font-bold underline">
                 CONTACT
             </h2>
-            <div className="h-[2px] bg-gradient-to-r w-full md:w-[85%] from-purple-500 to-pink-500 my-4" />
-            <div className="pt-6 flex flex-col space-y-8 md:space-y-0 md:flex-row  md:w-[85%]  justify-between text-xl">
-                <div className="flex space-x-24 md:space-x-8">
-                    <span className="font-semibold text-2xl tracking-wide">
+            <div className="pt-6 flex flex-col space-y-4  md:w-[85%]  justify-between md:text-lg">
+                <div className="flex md:space-x-8">
+                    <span className="font-semibold  md:text-2xl flex-1 tracking-wide">
                         MAIL
                     </span>
-                    <span className="flex items-start space-x-3">
+                    <span className="flex items-start space-x-3 flex-1">
                         <Arrow />
                         <a href="mailto: adeyombokehd@gmail.com" target="_blank">
                         adeyomkehd@gmail.com
@@ -21,11 +20,11 @@ const Main = () => {
                     </span>
                 </div>
 
-                <div className="flex space-x-8">
-                    <span className="font-semibold text-2xl tracking-wide">
+                <div className="flex md:space-x-8 md:text-lg pb-44 md:pb-0">
+                    <span className="font-semibold md:text-2xl tracking-wide flex-1">
                         ON THE INTERNET
                     </span>
-                    <div className="flex flex-col space-y-5 underline">
+                    <div className="flex flex-col space-y-5 underline flex-1">
                         <span className="flex items-start space-x-3">
                             <Arrow />
                             <a href=''>

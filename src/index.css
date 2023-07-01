@@ -4,7 +4,6 @@
 
 * {
     font-family: 'Inter', sans-serif;
-    cursor: none;
 }
 
 body {
@@ -19,10 +18,10 @@ body {
     transition: all ease-in 300ms;
 }
 
-.noy {
+/* .noy {
     scrollbar-width: none;
     height: 80vh;
-}
+} */
 
 /* .section-80:hover {
     

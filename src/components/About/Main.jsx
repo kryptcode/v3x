@@ -1,19 +1,26 @@
-import React, { Suspense } from 'react'
-import vax from '../../assets/vaxxx.gif'
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+import Html from '../../assets/html.png'
+import Css from '../../assets/css.png'
+import Js from '../../assets/javasCRIPT.png'
+import Nextjs from '../../assets/nextjs.png'
+import Nodejs from '../../assets/nodejs.png'
+import Twind from '../../assets/tailwind.png'
+import Reactjs from '../../assets/react.png'
+import { useRecoilValue } from 'recoil'
+import { darkModeState } from '../../atoms'
 
 const Main = () => {
+    const darkMode = useRecoilValue(darkModeState)
+
   return (
-    <div className='flex-[6] flex flex-col md:flex-row justify-between items-center'>
-        <div className='md:flex-[4] text-lg pt-20 overflow-scroll noy'>
-            <h2 className='text-8xl font-bold mb-6'>
+    <div className='flex-[4] flex flex-col md:flex-row  px-5 justify-between items-center'>
+        <div className='md:flex-[4] text-lg pt-10   '>
+            <h2 className='text-7xl font-bold mb-6'>
                 About
             </h2>
 
-            <div className='tracking-wide space-y-5'>
+            <div className='tracking-wide space-y-5 text-base'>
                 <p>
-                👋 Hi! I'm Koye, a passionate frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over a year. I always build projects to hone my skills.
+                Hi! I'm Koye, a frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over a year. I always build projects to hone my skills.
                 </p>
 
                 <p>
@@ -41,32 +48,40 @@ const Main = () => {
                     Skills
                 </h5>
 
-                <div>
-                HTML and CSS / Javascript / Recoil / React / Thirdweb SDK/ Firebase / Nextjs / Vite / Framer / 
+                <div className='grid-cols-4 grid gap-5 text-center font-bold text-sm py-2'>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Html} alt="" />
+                        <p>HTML</p>
+                    </div>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Css} alt="" />
+                        <p>CSS</p>
+                    </div>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Js} alt="" />
+                        <p>Javascript</p>
+                    </div>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Reactjs} alt="" />
+                        <p>React</p>
+                    </div>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Nextjs} alt="" />
+                        <p>Next</p>
+                    </div>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Nodejs} alt="" />
+                        <p>Node</p>
+                    </div>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                        <img className='h-24 ' src={Twind} alt="" />
+                        <p>Tailwind</p>
+                    </div>
+
+                {/* HTML and CSS / Javascript / Recoil / React / Thirdweb SDK/ Firebase / Nextjs / Vite / Framer / Typescript */}
                 </div>
             </div>
 
-        </div>
-        <div className='relative md:flex-[2] hidden md:inline-block '>
-            {/* <div className='bg-slate-600  '> */}
-            {/* </div> */}
-            <Canvas>
-            <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-            {/* <img src={vax} alt="" className='anim-img w-[25rem] h-[25rem]  object-contain' /> */}
-          
         </div>
     </div>
   )

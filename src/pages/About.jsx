@@ -1,28 +1,28 @@
+import { useRecoilValue } from 'recoil'
+import { darkModeState } from '../atoms'
+import Main from '../components/About/Main'
+import Sidebar from '../components/Sidebar'
 import 'animate.css'
+import { Cursor } from "react-creative-cursor"
 import { Link } from "react-router-dom";
-import { useRecoilValue } from "recoil";
-import { darkModeState } from "../../atoms";
+import 'react-creative-cursor/dist/styles.css';
 
-const Sections = () => {
-
+const About = () => {
   const darkMode = useRecoilValue(darkModeState)
 
+
   return (
-    <div className='md:flex-[5] text-[3.5rem] md:text-[5.5rem] leading-none font-bold w-[90%] mx-auto md:w-full  flex flex-col md:justify-end md:items-center pb-5 animate__animated animate__fadeInRight '>
-      <div className='space-y-5 md:space-y-12'>
-      <div className='group transition-all duration-300 ease-in-out'>
-        <Link to='/about' className=''>
-          <div>
-          <span className='text-2xl'>
-          01. {' '}
-          </span>
-          <span  className='space-span'>
-          ABOUT
-          </span>
-          </div>
-          <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
-        </Link>
-      </div>
+    <div className={` ${darkMode ? 'bg-[#111] text-white ' : 'bg-[#d1bfa7]'} flex flex-col md:flex-row px-4 animate__animated animate__fadeInDown`}>
+      <Cursor 
+          isGelly={true}
+          cursorSize={20}
+          cursorBackgrounColor={darkMode ? '#fff' : '#000'}
+        />
+      <Sidebar />
+      <Main />
+
+      <div className='md:flex-[3] text-[3.5rem] md:text-[4.5rem] leading-none font-bold w-[90%] mx-auto md:w-full hidden md:flex flex-col md:justify-end md:items-center pb-5 animate__animated animate__fadeInRight '>
+      <div className='space-y-5 md:space-y-7'>
 
       <div className='group transition-all duration-300 ease-in-out'>
         <Link to='/work' className=''>
@@ -53,7 +53,8 @@ const Sections = () => {
       </div>
       </div>
     </div>
+    </div>
   )
 }
 
-export default Sections
+export default About
