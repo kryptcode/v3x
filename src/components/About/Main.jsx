@@ -48,7 +48,7 @@ const Main = () => {
                     Skills
                 </h5>
 
-                <div className='grid-cols-3 md:grid-cols-4 grid gap-5 text-center font-bold text-sm py-2'>
+                <div className='grid-cols-2 md:grid-cols-4 grid gap-5 text-center font-bold text-sm py-2'>
                     <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Html} alt="" />
                         <p>HTML</p>
