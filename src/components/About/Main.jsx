@@ -1,6 +1,6 @@
 import Html from '../../assets/html.png'
 import Css from '../../assets/css.png'
-import Js from '../../assets/javasCRIPT.png'
+import Js from '../../assets/javascript.png'
 import Nextjs from '../../assets/nextjs.png'
 import Nodejs from '../../assets/nodejs.png'
 import Twind from '../../assets/tailwind.png'
