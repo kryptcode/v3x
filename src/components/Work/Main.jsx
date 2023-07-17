@@ -5,6 +5,9 @@ import data from '../../data.json'
 import 'animate.css';
 import Arrow from '../custom/Arrow'
 import { Link } from 'react-router-dom';
+import { HiBars2 } from 'react-icons/hi2'
+import { FaTimes } from 'react-icons/fa'
+import { scroller, Events, animateScroll as scroll } from 'react-scroll'
 
 const Main = () => {
   const darkMode = useRecoilValue(darkModeState)
@@ -12,10 +15,25 @@ const Main = () => {
   const [showSections, setShowSections] = useState(false)
 
   const bottomEl = useRef(null)
-
+  const topEl = useRef(null)
+  
   const scrollToBottom = () => {
     bottomEl?.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const scrollToTop = () => {
+    topEl?.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  // scroller.scrollTo('scrollId', {
+  //   duration: 1500,
+  //   delay: 100,
+  //   smooth: true
+  // })
+    
+    // Events.scrollEvent.register('begin', function(to, ) {
+    //   console.log('begin', to, element);
+    // });
+
 
 
 
@@ -27,9 +45,13 @@ const Main = () => {
           {
             project && (
                 <div className={`  px-5 md:px-0`}>
-                  <div className='' onMouseOver={scrollToBottom}>
-                    <img src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} rounded-3xl transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
-                    <div ref={bottomEl}></div>
+                  <div className='hidden md:block h-[40vh] overflow-y-scroll scrollbar-none ' onMouseOver={scrollToBottom} onMouseLeave={scrollToTop} >
+                  <div ref={topEl}  name={'scrolltopId'}></div>
+                    <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
+                    <div ref={bottomEl} name={'scrollId'}></div>
+                  </div>
+                  <div className='md:hidden h-[35vh] py-1 overflow-y-hidden ' >
+                    <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn rounded-xl`} alt="" />
                   </div>
                   <div>
                     <p className='text-2xl mt-6 font-semibold'>
@@ -115,8 +137,7 @@ const Main = () => {
                 return (
                 <div 
                   key={item.img} 
-                  className='p-1 text-[3rem] md:text-[4.2rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
-                  onMouseOver={handleHover}
+                  className='p-1 text-[3rem] md:text-[3.7rem] leading-none font-bold group transition-all duration-300 ease-in-out animate__animated animate__fadeInRight' 
                   onClick={handleHover}
                 >
                   <div className='space-x-2'>
@@ -137,9 +158,9 @@ const Main = () => {
 
           
 
-          <div className='text-lg absolute bottom-5 right-5 text-[#6a139f] underline ' onClick={() => setShowSections(!showSections)} >
+          <div className='text-3xl absolute bottom-5 right-5 text-[#6a139f] underline ' onClick={() => setShowSections(!showSections)} >
             {
-              showSections ? 'show projects' : 'show sections'
+              showSections ? <FaTimes /> : <HiBars2 />
             }
           </div>
       </div>
