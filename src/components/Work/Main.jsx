@@ -126,7 +126,7 @@ const Main = () => {
             (
               <div className='space-y-4 overflow-y-scroll scrollbar-thin scroll-smooth scrollbar-thumb-rounded-xl scrollbar-thumb-slate-700 h-[50vh] md:h-[90vh]'>
             {
-              data.map(item => {
+              data.map((item, index) => {
                 function handleHover(e) {
                   
                   if(e.target.textContent === item.name) {
@@ -142,7 +142,7 @@ const Main = () => {
                 >
                   <div className='space-x-2'>
                   <span className='text-2xl'>
-                  {`0${item.id} `}
+                  {`0${index + 1} `}
                   </span>
                   <span  className='space-span'>
                   {item.name}
