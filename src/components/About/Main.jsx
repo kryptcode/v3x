@@ -13,12 +13,12 @@ const Main = () => {
 
   return (
     <div className='flex-[4] flex flex-col md:flex-row  px-5 justify-between items-center'>
-        <div className='md:flex-[4] text-lg pt-10   '>
+        <div className='md:flex-[4] text-lg pt-10 pb-5   '>
             <h2 className='text-7xl font-bold mb-6'>
                 About
             </h2>
 
-            <div className='tracking-wide space-y-5 text-base'>
+            <div className='tracking-wide space-y-5'>
                 <p>
                 Hi! I'm Koye, a frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over a year. I always build projects to hone my skills.
                 </p>
@@ -33,7 +33,7 @@ const Main = () => {
             </div>
 
             <div>
-                <h5 className='my-4 text-4xl font-semibold'>
+                <h5 className='mt-4 mb-2 text-2xl font-semibold'>
                     Experience
                 </h5>
                 <ul>
@@ -44,38 +44,31 @@ const Main = () => {
             </div>
 
             <div>
-                <h5 className='my-4 text-4xl font-semibold'>
+                <h5 className='mt-4 mb-2 text-2xl font-semibold'>
                     Skills
                 </h5>
 
-                <div className='grid-cols-2 md:grid-cols-4 grid gap-5 text-center font-bold text-sm py-2'>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                <div className='grid-cols-2 md:grid-cols-4 grid gap-5 text-center font-bold text-sm'>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Html} alt="" />
-                        <p>HTML</p>
                     </div>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Css} alt="" />
-                        <p>CSS</p>
                     </div>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Js} alt="" />
-                        <p>Javascript</p>
                     </div>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Reactjs} alt="" />
-                        <p>React</p>
                     </div>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Nextjs} alt="" />
-                        <p>Next</p>
                     </div>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Nodejs} alt="" />
-                        <p>Node</p>
                     </div>
-                    <div className={`${darkMode ? 'bg-[#111] shadow-white/20' : 'bg-[#d1bfa7] shadow-black/20'} flex flex-col rounded-lg justify-center items-center space-y-1 p-3 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
+                    <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Twind} alt="" />
-                        <p>Tailwind</p>
                     </div>
 
                 {/* HTML and CSS / Javascript / Recoil / React / Thirdweb SDK/ Firebase / Nextjs / Vite / Framer / Typescript */}
