@@ -32,7 +32,7 @@ const Main = () => {
                 </p>
             </div>
 
-            <div>
+            {/* <div>
                 <h5 className='mt-4 mb-2 text-2xl font-semibold'>
                     Experience
                 </h5>
@@ -41,14 +41,42 @@ const Main = () => {
                         2 years + experience in Web Development
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
             <div>
-                <h5 className='mt-4 mb-2 text-2xl font-semibold'>
-                    Skills
+                <h5 className='mt-7 mb-4 text-3xl font-semibold'>
+                    My Backpack
                 </h5>
 
-                <div className='grid-cols-2 md:grid-cols-4 grid gap-5 text-center font-bold text-sm'>
+                <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-6'>
+                    <div className='space-y-2 text-sm md:flex-[1.8] '>
+                        <h6 className='text-xl font-medium underline'>Frontend</h6>
+                        <div>HTML</div>
+                        <div>CSS & CSS Frameworks:Tailwind CSS, framer-motion, styled-components etc</div>
+                        <div>JavaScript & TypeScript</div>
+                        <div>React</div>
+                        <div>Vite</div>
+                        <div>Next.js</div>
+                        <div>State Management Libraries: Redux, Recoil & Zustand</div>
+                        <div>Sass</div>
+                    </div>
+                    
+                    <div className='space-y-2 text-sm md:flex-1'>
+                        <h6 className='text-xl font-medium underline'>Backend</h6>
+                        <div>Node.js</div>
+                        <div>Firebase</div>
+                    </div>
+
+                    <div className='space-y-2 text-sm md:flex-1'>
+                    <h6 className='text-xl font-medium underline'>Others</h6>
+                    <div>Version control: Git</div>
+                    <div>Restful APIs</div>
+                    <div>Performance Optimization</div>
+                    <div>thirdweb</div>
+                    </div>
+                </div>
+
+                {/* <div className='grid-cols-2 md:grid-cols-4 grid gap-5 text-center font-bold text-sm'>
                     <div className={`${darkMode ? 'bg-[#111] shadow-gray-200/5' : 'bg-[#d1bfa7] shadow-black/5'} flex flex-col rounded-lg justify-center items-center space-y-1 py-7 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out tracking-wide`}>
                         <img className='h-24 ' src={Html} alt="" />
                     </div>
@@ -71,8 +99,8 @@ const Main = () => {
                         <img className='h-24 ' src={Twind} alt="" />
                     </div>
 
+                </div> */}
                 {/* HTML and CSS / Javascript / Recoil / React / Thirdweb SDK/ Firebase / Nextjs / Vite / Framer / Typescript */}
-                </div>
             </div>
 
         </div>
@@ -81,5 +109,3 @@ const Main = () => {
 }
 
 export default Main
-
-// w-[32rem] h-[32rem]
