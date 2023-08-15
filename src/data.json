@@ -6,8 +6,8 @@
         "bg": "#a7f3d0",
         "techs": ["Next.js", "Context API", "TailwindCSS"],
         "img": "https://i.ibb.co/LNKw9tz/Screenshot-2023-07-14-at-17-07-07-Audiophile-Home.png",
-        "live_url": "https://audiophile-ivory.vercel.app",
-        "code_url": "https://github.com/kryptcode/audio-p"
+        "live_url": "https://audio-phile-eight.vercel.app/",
+        "code_url": "https://github.com/kryptcode/audiophile"
     },
     {  
         "id": 2,

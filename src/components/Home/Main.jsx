@@ -25,7 +25,7 @@ const Main = () => {
             />
             </div>
             <div className='text-base font-medium my-2'>
-                Currently working as a <br /> Frontend Engineer at Mizo.
+                Currently working as a <br /> Frontend Engineer at QClose.
             </div>
             <div className='text-3xl flex space-x-5 my-3'>
                 <a href="mailto:adeyombokehd@gmail.com" className='text-red-500 hover:scale-110 transition-all duration-300 ease-in-out' target="_blank">

@@ -24,15 +24,6 @@ const Main = () => {
   const scrollToTop = () => {
     topEl?.current?.scrollIntoView({ behavior: 'smooth' });
   };
-  // scroller.scrollTo('scrollId', {
-  //   duration: 1500,
-  //   delay: 100,
-  //   smooth: true
-  // })
-    
-    // Events.scrollEvent.register('begin', function(to, ) {
-    //   console.log('begin', to, element);
-    // });
 
 
 
