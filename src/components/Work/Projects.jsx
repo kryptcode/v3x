@@ -16,15 +16,21 @@ const Projects = () => {
   
   return (
     <div className={`${darkMode ? 'bg-[#111] text-white' : 'bg-[#d1bfa7]'} h-screen overflow-y-scroll px-5  flex-[7] pb-11 pt-7`}>
+        <h2 className='text-7xl font-bold mb-6'>
+                Work
+        </h2>
 
-        {
-            data.map((project, index) => {
-                return (
-                    <div key={index}>
-                        <Card project={project} />
-                    </div>
-            )})
-        }
+        <div className='mb-5'>
+            {
+                data.map((project, index) => {
+                    return (
+                        <div key={index}>
+                            <Card project={project} />
+                        </div>
+                )})
+            }
+        </div>
+
 
 
         <div className=' text-[3.5rem] md:text-[4.5rem] leading-none font-bold w-[90%] mx-auto md:w-full hidden md:flex flex-col md:justify-end md:items-end px-5 pb-5 animate__animated animate__fadeInRight '>

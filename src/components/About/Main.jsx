@@ -18,7 +18,7 @@ const Main = () => {
                 About
             </h2>
 
-            <div className='tracking-wide space-y-5'>
+            <div className='tracking-wide space-y-5 text-sm'>
                 <p>
                 Hi! I'm Koye, a frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over a year. I always build projects to hone my skills.
                 </p>

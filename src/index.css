@@ -39,6 +39,15 @@ body {
     -webkit-text-stroke: 2.5px #6a139f;
 }
 
+.space-smallspan {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #6a139f;
+}
+.space-whitespan {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #ddd;
+}
+
 .work {
     scrollbar-width: none;
 }

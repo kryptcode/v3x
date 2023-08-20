@@ -29,21 +29,24 @@ const Card = ({ project }) => {
     }
 
   return (
-    <div className={`flex flex-row ${project.rev && 'flex-row-reverse'} mb-10 `}>
+    <div className={`flex flex-col md:flex-row ${project.rev && 'md:flex-row-reverse'} mb-10 `}>
         <div className={`flex-1  px-5 md:px-0`}>
             <div 
-                className='hidden md:block h-[40vh] overflow-y-scroll scrollbar-none ' 
+                className={`${!scrollStarted && 'h-[40vh]'} hidden md:block  overflow-y-scroll scrollbar-none `} 
                 // onClick={scrolling}
+                onClick={() => setscrollStarted(!scrollStarted)}
             >
                 <div ref={topEl}  name={'scrolltopId'}></div>
                 <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
                 <div ref={bottomEl} name={'scrollId'}></div>
             </div>
-                  <div className='md:hidden h-[35vh] py-1 overflow-y-hidden ' >
-                    <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn rounded-xl`} alt="" />
+                  <div className={`${!scrollStarted && 'h-[25vh]'} md:hidden py-1 overflow-y-hidden `}
+                onClick={() => setscrollStarted(!scrollStarted)}
+                  >
+                    <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn `} alt="" />
                   </div>
                   <div>
-                    <p className='text-2xl mt-6 font-semibold'>
+                    <p className={`${!darkMode ?'space-smallspan' : 'space-whitespan'} text-4xl uppercase mt-6 font-semibold`}>
                       {project.name}
                     </p>
                     <div className='space-x-5 underline my-4'>
