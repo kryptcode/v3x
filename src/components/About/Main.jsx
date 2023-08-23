@@ -20,7 +20,7 @@ const Main = () => {
 
             <div className='tracking-wide space-y-5 text-sm'>
                 <p>
-                Hi! I'm Koye, a frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over a year. I always build projects to hone my skills.
+                Hi! I'm Koye, a frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over two years. I always build projects to hone my skills.
                 </p>
 
                 <p>
@@ -72,7 +72,8 @@ const Main = () => {
                     <div>Version control: Git</div>
                     <div>Restful APIs</div>
                     <div>Performance Optimization</div>
-                    <div>thirdweb</div>
+                    <div>ThirdWeb</div>
+                    <div>Headless CMS: strapi</div>
                     </div>
                 </div>
 
