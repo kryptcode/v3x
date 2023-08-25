@@ -8,7 +8,7 @@ const Main = () => {
     const darkMode = useRecoilValue(darkModeState)
 
   return (
-    <div  className={`${darkMode ? 'bg-[#111] text-white/80' : 'bg-[#d1bfa7]'} w-[90%] mx-auto md:w-full flex-[3] flex flex-col-reverse pb-11`}>
+    <div  className={`${darkMode ? 'bg-[#000] text-white/80' : 'bg-[#d1bfa7]'} w-[90%] mx-auto md:w-full flex-[3] flex flex-col-reverse pb-11`}>
         
         <div>
             <div className='text-4xl font-bold'>

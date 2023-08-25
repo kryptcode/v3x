@@ -31,7 +31,7 @@ const Main = () => {
   
 
   return (
-    <div className={`${darkMode ? 'bg-[#111] text-white/80' : 'bg-[#d1bfa7]'} h-screen  flex-[7] flex flex-col md:flex-row md:items-end pb-11`}>
+    <div className={`${darkMode ? 'bg-[#000] text-white/80' : 'bg-[#d1bfa7]'} h-screen  flex-[7] flex flex-col md:flex-row md:items-end pb-11`}>
         <div className='md:flex-1 transition-all ease-in-out duration-300 relative'>
           {
             project && (
