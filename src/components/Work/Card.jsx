@@ -12,36 +12,36 @@ const Card = ({ project }) => {
     const bottomEl = useRef(null)
     const topEl = useRef(null)
                 
-    const scrollToBottom = () => {
-        bottomEl?.current?.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const scrollToBottom = () => {
+    //     bottomEl?.current?.scrollIntoView({ behavior: 'smooth' });
+    // };
 
-    const scrollToTop = () => {
-        topEl?.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-    function scrolling() {
-        setscrollStarted(!scrollStarted)
-        if(!scrollStarted) {
-            scrollToTop()
-        } else {
-            scrollToBottom()
-        }
-    }
+    // const scrollToTop = () => {
+    //     topEl?.current?.scrollIntoView({ behavior: 'smooth' });
+    // };
+    // function scrolling() {
+    //     setscrollStarted(!scrollStarted)
+    //     if(!scrollStarted) {
+    //         scrollToTop()
+    //     } else {
+    //         scrollToBottom()
+    //     }
+    // }
 
   return (
     <div className={`flex flex-col md:flex-row ${project.rev && 'md:flex-row-reverse'} mb-10 `}>
         <div className={`flex-1  px-5 md:px-0`}>
             <div 
-                className={`${!scrollStarted && 'h-[40vh]'} hidden md:block  overflow-y-scroll scrollbar-none `} 
+                className={`h-[40vh] hidden md:block  overflow-y-scroll scrollbar-none `} 
                 // onClick={scrolling}
-                onClick={() => setscrollStarted(!scrollStarted)}
+                // onClick={() => setscrollStarted(!scrollStarted)}
             >
                 <div ref={topEl}  name={'scrolltopId'}></div>
                 <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
                 <div ref={bottomEl} name={'scrollId'}></div>
             </div>
-                  <div className={`${!scrollStarted && 'h-[25vh]'} md:hidden py-1 overflow-y-hidden `}
-                onClick={() => setscrollStarted(!scrollStarted)}
+                  <div className={`h-[25vh] md:hidden py-1 overflow-y-hidden `}
+                // onClick={() => setscrollStarted(!scrollStarted)}
                   >
                     <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn `} alt="" />
                   </div>
