@@ -59,13 +59,13 @@
     },
     {
         "id": 7,
-        "name": "Pizza Boys",
+        "name": "Panpie",
         "description": "Multi-page website for pizza shop.",
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
         "img": "https://i.ibb.co/7273Pq0/Screenshot-2023-07-14-at-17-21-34-Pan-Buddies-Home.png",
-        "live_url": "https://c-rentals.vercel.app",
-        "code_url": "https://github.com/kryptcode/c-rentals",
+        "live_url": "https://pizza-boys.vercel.app/",
+        "code_url": "https://github.com/kryptcode/pizza-boys",
         "rev": false
 
     },
@@ -76,8 +76,8 @@
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
         "img": "https://i.ibb.co/r3LBBqX/Screenshot-2023-07-14-at-17-20-51-Gymate.png",
-        "live_url": "https://c-rentals.vercel.app",
-        "code_url": "https://github.com/kryptcode/c-rentals",
+        "live_url": "https://gymate-inky.vercel.app/",
+        "code_url": "https://github.com/kryptcode/gymate",
         "rev": true
 
     },
@@ -88,8 +88,8 @@
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
         "img": "https://i.ibb.co/xSCyxvF/Screenshot-2023-07-14-at-17-16-15-Vite-React.png",
-        "live_url": "https://c-rentals.vercel.app",
-        "code_url": "https://github.com/kryptcode/c-rentals",
+        "live_url": "https://steam-deck.vercel.app/",
+        "code_url": "https://github.com/kryptcode/steam-deck",
         "rev": false
     }
 ]
