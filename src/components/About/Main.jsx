@@ -20,15 +20,11 @@ const Main = () => {
 
             <div className='tracking-wide space-y-5 text-sm'>
                 <p>
-                Hi! I'm Koye, a frontend developer based in Abuja, Nigeria. I strive to construct web applications that are appealing in design while maintaining their functionality. I've been working as a frontend developer for over two years. I always build projects to hone my skills.
+                    Hello! I'm Koye, a dedicated web developer with a passion for crafting digital experiences that stand out. Whether you're an entrepreneur with a startup idea or an established business looking to enhance your online presence, I'm here to transform your vision into reality.
                 </p>
 
                 <p>
-                Currently, I'm pursuing a bachelor's degree in Computer Science and Economics. I am interested in JavaScript technologies. Some frontend technologies that I have worked with and would like to work with in the future are Next.Js, React, Recoil, Thirdweb SDK, Styled components, Tailwind CSS, Firebase, Vite etc.
-                </p>
-
-                <p>
-                I'm actively seeking roles where I can broaden my knowledge and utilize my skills.
+                I embarked on my web development journey 4 years ago with a mission to bring innovation and creativity to the digital world. Over the years, I've had the privilege of working on a diverse range of projects, each contributing to my growth and expertise. From small businesses to large corporations, I've helped clients achieve their online goals.
                 </p>
             </div>
 
@@ -65,6 +61,7 @@ const Main = () => {
                         <h6 className='text-xl font-medium underline'>Backend</h6>
                         <div>Node.js</div>
                         <div>Firebase</div>
+                        <div>Headless CMS: Sanity & Strapi</div>
                     </div>
 
                     <div className='space-y-2 text-sm md:flex-1'>
@@ -72,8 +69,7 @@ const Main = () => {
                     <div>Version control: Git</div>
                     <div>Restful APIs</div>
                     <div>Performance Optimization</div>
-                    <div>ThirdWeb</div>
-                    <div>Headless CMS: strapi</div>
+                    <div>Smart Contract Development: Thirdweb</div>
                     </div>
                 </div>
 

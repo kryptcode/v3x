@@ -35,7 +35,7 @@ const Main = () => {
         <div className='md:flex-1 transition-all ease-in-out duration-300 relative'>
           {
             project && (
-                <div className={`  px-5 md:px-0`}>
+                <div className={` md:px-0`}>
                   <div className='hidden md:block h-[40vh] overflow-y-scroll scrollbar-none ' onMouseOver={scrollToBottom} onMouseLeave={scrollToTop} >
                   <div ref={topEl}  name={'scrolltopId'}></div>
                     <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
