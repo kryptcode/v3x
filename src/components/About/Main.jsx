@@ -61,7 +61,7 @@ const Main = () => {
                         <h6 className='text-xl font-medium underline'>Backend</h6>
                         <div>Node.js</div>
                         <div>Firebase</div>
-                        <div>Headless CMS: Sanity & Strapi</div>
+                        <div>Content Management: Sanity & Strapi</div>
                     </div>
 
                     <div className='space-y-2 text-sm md:flex-1'>
