@@ -41,10 +41,10 @@ function Home() {
           ]}
           hasBlendMode={true}
           innerStyle={{
-            backgroundColor: '#fff'
+            backgroundColor: '#999'
           }}
           outerStyle={{
-            border: '3px solid #fff'
+            border: '3px solid #999'
           }}
         />
         ) : (
@@ -79,7 +79,7 @@ function Home() {
         )
       }
       
-      <div className={` ${darkMode ? 'bg-[#000] text-white ' : 'bg-[#d1bfa7] '} h-screen w-full flex flex-col md:flex-row justify-between px-4 animate__animated animate__fadeInUp`}>
+      <div className={` ${darkMode ? 'bg-[#000] text-[#444] ' : 'bg-[#d1bfa7] '} h-screen w-full flex flex-col md:flex-row justify-between px-4 animate__animated animate__fadeInUp`}>
         {/* <Cursor 
           isGelly={true}
           cursorSize={20}

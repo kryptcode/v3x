@@ -7,7 +7,8 @@ import Arrow from '../custom/Arrow'
 import { Link } from 'react-router-dom';
 import { HiBars2 } from 'react-icons/hi2'
 import { FaTimes } from 'react-icons/fa'
-import { scroller, Events, animateScroll as scroll } from 'react-scroll'
+// import { scroller, Events, animateScroll as scroll } from 'react-scroll'
+import AutoScroll from '@brianmcallister/react-auto-scroll';
 
 const Main = () => {
   const darkMode = useRecoilValue(darkModeState)
@@ -26,8 +27,6 @@ const Main = () => {
   };
 
 
-
-
   
 
   return (
@@ -36,7 +35,7 @@ const Main = () => {
           {
             project && (
                 <div className={` md:px-0`}>
-                  <div className='hidden md:block h-[40vh] overflow-y-scroll scrollbar-none ' onMouseOver={scrollToBottom} onMouseLeave={scrollToTop} >
+                  <div className='hidden md:block h-[40vh] overflow-y-scroll scrollbar-none ' onMouseOver={scrollToBottom} onMouseLeave={scrollToTop}  >
                   <div ref={topEl}  name={'scrolltopId'}></div>
                     <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
                     <div ref={bottomEl} name={'scrollId'}></div>

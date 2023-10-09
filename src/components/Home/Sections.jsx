@@ -20,7 +20,7 @@ const Sections = () => {
           ABOUT
           </span>
           </div>
-          {/* <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" /> */}
+          <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
         </Link>
       </div>
 
@@ -30,26 +30,12 @@ const Sections = () => {
             <span className='text-2xl'>
             02. {' '}
             </span>
-            <span className={`${darkMode && 'text-white '}`}>
+            <span className={`${darkMode && 'text-[#999] '}`}>
             WORK
             </span>
           </div>
-          {/* <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" /> */}
+          <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
         </Link>
-      </div>
-
-      <div className='group transition-all duration-300 ease-in-out'>
-      <Link to='/contact' className=''>
-        <div>
-        <span className='text-2xl'>
-          03. {' '}
-          </span>
-          <span className='space-span'>
-          CONTACT
-          </span>
-        </div>
-        {/* <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" /> */}
-      </Link>
       </div>
       </div>
     </div>

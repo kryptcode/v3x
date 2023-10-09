@@ -39,10 +39,10 @@ const Works = () => {
           ]}
           hasBlendMode={true}
           innerStyle={{
-            backgroundColor: '#fff'
+            backgroundColor: '#999'
           }}
           outerStyle={{
-            border: '3px solid #fff'
+            border: '3px solid #999'
           }}
         />
         ) : (

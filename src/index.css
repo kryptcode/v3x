@@ -37,12 +37,12 @@ body {
 
 .space-span {
     color: transparent;
-    -webkit-text-stroke: 2.5px #6a139f;
+    -webkit-text-stroke: 2.5px #333;
 }
 
 .space-smallspan {
     color: transparent;
-    -webkit-text-stroke: 1.5px #6a139f;
+    -webkit-text-stroke: 1.5px #333;
 }
 .space-whitespan {
     color: transparent;

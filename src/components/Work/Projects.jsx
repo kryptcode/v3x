@@ -15,7 +15,7 @@ const Projects = () => {
 
   
   return (
-    <div className={`${darkMode ? 'bg-[#000] text-white' : 'bg-[#d1bfa7]'} h-screen overflow-y-scroll px-5  flex-[7] pb-11 pt-7`}>
+    <div className={`${darkMode ? 'bg-[#000] text-[#999]' : 'bg-[#d1bfa7]'} h-screen overflow-y-scroll px-5  flex-[7] pb-11 pt-7`}>
         <h2 className='text-7xl font-bold mb-6'>
                 Work
         </h2>
@@ -37,30 +37,30 @@ const Projects = () => {
               <div className='space-y-5 md:space-y-7'>
 
               <div className='group transition-all duration-300 ease-in-out'>
-                <Link to='/about' className=''>
+                <Link to='/' className=''>
                   <div>
                     <span className='text-2xl'>
                     01. {' '}
                     </span>
-                    <span className={`${darkMode && 'text-white '}`}>
-                    About
+                    <span className={`${darkMode && 'text-[#999] '}`}>
+                    HOME
                     </span>
                   </div>
-                  <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
+                  <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
                 </Link>
               </div>
 
               <div className='group transition-all duration-300 ease-in-out'>
-              <Link to='/contact' className=''>
+              <Link to='/about' className=''>
                 <div>
                 <span className='text-2xl'>
-                  03. {' '}
+                  02. {' '}
                   </span>
                   <span className='space-span'>
-                  CONTACT
+                  ABOUT
                   </span>
                 </div>
-                <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
+                <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
               </Link>
               </div>
               </div>

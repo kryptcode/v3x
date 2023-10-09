@@ -14,7 +14,7 @@ const Sidebar = () => {
             <LightToggle />
           </div>
 
-          <div className={`w-[1px] ${darkMode ? 'bg-[#6a139f] ' : 'bg-black'}  h-52`}  />
+          <div className={`w-[1px] ${darkMode ? 'bg-[#333] ' : 'bg-black'}  h-52`}  />
 
           <div className='-rotate-90 text-2xl font-bold uppercase p-2 hover:scale-110 transition-all duration-200  hover:opacity-75'>
             <Link to='/'>

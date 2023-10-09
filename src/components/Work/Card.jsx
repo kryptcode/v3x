@@ -46,7 +46,7 @@ const Card = ({ project }) => {
                     <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn `} alt="" />
                   </div>
                   <div>
-                    <p className={`${!darkMode ?'space-smallspan' : 'space-whitespan'} text-4xl uppercase mt-6 font-semibold`}>
+                    <p className={`${darkMode ?'text-[#999] ' : 'text-[#000] '} text-4xl uppercase mt-6 font-semibold`}>
                       {project.name}
                     </p>
                     <div className='space-x-5 underline my-4'>

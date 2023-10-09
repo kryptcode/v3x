@@ -38,10 +38,10 @@ const About = () => {
           ]}
           hasBlendMode={true}
           innerStyle={{
-            backgroundColor: '#fff'
+            backgroundColor: '#999'
           }}
           outerStyle={{
-            border: '3px solid #fff'
+            border: '3px solid #999'
           }}
         />
         ) : (
@@ -76,7 +76,7 @@ const About = () => {
         )
       }
 
-    <div className={` ${darkMode ? 'bg-[#000] text-white ' : 'bg-[#d1bfa7]'} flex flex-col md:flex-row px-4 animate__animated animate__fadeInDown`}>
+    <div className={` ${darkMode ? 'bg-[#000] text-[#444] ' : 'bg-[#d1bfa7]'} flex flex-col md:flex-row px-4 animate__animated animate__fadeInDown`}>
       {/* <Cursor 
           isGelly={true}
           cursorSize={20}
@@ -89,30 +89,31 @@ const About = () => {
       <div className='space-y-5 md:space-y-7'>
 
       <div className='group transition-all duration-300 ease-in-out'>
-        <Link to='/work' className=''>
+        <Link to='/' className=''>
           <div>
             <span className='text-2xl'>
-            02. {' '}
+            01. {' '}
             </span>
-            <span className={`${darkMode && 'text-white '}`}>
-            WORK
+            <span className={`${darkMode && 'text-[#999] '}`}>
+            HOME
             </span>
           </div>
-          <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
+          <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
+
         </Link>
       </div>
 
       <div className='group transition-all duration-300 ease-in-out'>
-      <Link to='/contact' className=''>
+      <Link to='/work' className=''>
         <div>
         <span className='text-2xl'>
-          03. {' '}
+          02. {' '}
           </span>
           <span className='space-span'>
-          CONTACT
+          WORK
           </span>
         </div>
-        <div className="h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500 to-pink-500" />
+        <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
       </Link>
       </div>
       </div>
