@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className={`${darkMode ? 'bg-[#000]': 'bg-[#d1bfa7]'} hidden w-[8rem] h-screen md:flex justify-center items-center`}>
+      <div className={`${darkMode ? 'bg-[#000] text-[#999]': 'bg-[#d1bfa7]'} hidden w-[8rem] h-screen md:flex justify-center items-center`}>
         <div className='h-[90vh] w-full flex flex-col-reverse justify-between items-center'>
           <div className='hover:opacity-75 cursor-pointer' onClick={() => setDarkMode(!darkMode)}>
             <LightToggle />
