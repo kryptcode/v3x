@@ -121,6 +121,7 @@ const Main = () => {
                         <div>Next.js</div>
                         <div>State Management Libraries: Redux, Recoil & Zustand</div>
                         <div>Sass</div>
+                        <div>PHP</div>
                     </div>
                     
                     <div className={`${darkMode ? 'text-[#999]' : 'text-black'} space-y-2 text-sm md:flex-1`}>
@@ -128,6 +129,7 @@ const Main = () => {
                         <div>Node.js</div>
                         <div>Firebase</div>
                         <div>Content Management: Sanity & Strapi</div>
+                        <div>Express</div>
                     </div>
 
                     <div className={`${darkMode ? 'text-[#999]' : 'text-black'} space-y-2 text-sm md:flex-1`}>
