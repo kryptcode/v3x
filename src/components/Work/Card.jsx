@@ -32,7 +32,7 @@ const Card = ({ project }) => {
     <div className={`flex flex-col md:flex-row ${project.rev && 'md:flex-row-reverse'} mb-10 `}>
         <div className={`flex-1  px-5 md:px-0`}>
             <div 
-                className={`h-[40vh] hidden md:block  overflow-y-scroll scrollbar-none `} 
+                className={` `} 
                 // onClick={scrolling}
                 // onClick={() => setscrollStarted(!scrollStarted)}
             >
@@ -40,11 +40,11 @@ const Card = ({ project }) => {
                 <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
                 <div ref={bottomEl} name={'scrollId'}></div>
             </div>
-                  <div className={`h-[25vh] md:hidden py-1 overflow-y-hidden `}
+                  {/* <div className={`h-[25vh] md:hidden py-1 overflow-y-hidden `}
                 // onClick={() => setscrollStarted(!scrollStarted)}
                   >
                     <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn `} alt="" />
-                  </div>
+                  </div> */}
                   <div>
                     <p className={`${darkMode ?'text-[#999] ' : 'text-[#000] '} text-4xl uppercase mt-6 font-semibold`}>
                       {project.name}
@@ -59,12 +59,16 @@ const Card = ({ project }) => {
                     }
                     </div>
                     <div className='flex space-x-3 items-center'>
-                      <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
-                        <Arrow />
-                        <a href={project.code_url} target='_blank' >
-                          View Code
-                        </a>
-                      </button>
+                      {
+                        project.code_url && (
+                        <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
+                          <Arrow />
+                          <a href={project.code_url} target='_blank' >
+                            View Code
+                          </a>
+                        </button>
+                        )
+                      }
                       
                       <button className={`flex py-1 px-3 items-center space-x-2 border ${darkMode ? 'border-white' :'border-black '} hover:scale-105 transition-all ease-in duration-250  rounded`}>
                         <Arrow />

@@ -76,7 +76,7 @@ const About = () => {
         )
       }
 
-    <div className={` ${darkMode ? 'bg-[#000] text-[#444] ' : 'bg-[#d1bfa7]'} flex flex-col md:flex-row px-4 animate__animated animate__fadeInDown`}>
+    <div className={` ${darkMode ? 'bg-[#000] text-[#777] ' : 'bg-[#d1bfa7]'} flex flex-col md:flex-row px-4 animate__animated animate__fadeInDown`}>
       {/* <Cursor 
           isGelly={true}
           cursorSize={20}
