@@ -49,7 +49,10 @@ const Card = ({ project }) => {
                     <p className={`${darkMode ?'text-[#999] ' : 'text-[#000] '} text-4xl uppercase mt-6 font-semibold`}>
                       {project.name}
                     </p>
-                    <div className='space-x-5 underline my-4'>
+
+                    <div className={`h-[1px] ${darkMode ? 'bg-[#999] ' : 'bg-[#444] '} mt-2 mb-4`} />
+
+                    <div className='space-x-5 underline my-2 '>
                     {
                       project.techs.map((foo, index) => (
                         <span key={index}>
@@ -58,6 +61,12 @@ const Card = ({ project }) => {
                       ))
                     }
                     </div>
+
+
+                    <p className='text-sm mb-4'>
+                      {project.description}
+                    </p>
+
                     <div className='flex space-x-3 items-center'>
                       {
                         project.code_url && (
