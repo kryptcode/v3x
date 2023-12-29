@@ -1,16 +1,5 @@
 [
     {
-        "id": 1,
-        "name": "Audiophile",
-        "description": "An online shopping application where you can shop for audio devices. It also provides features such as cart management multi-page routing etc.",
-        "bg": "#a7f3d0",
-        "techs": ["Next.js", "Context API", "TailwindCSS"],
-        "img": "https://i.ibb.co/cXbLmBw/Screenshot-2023-12-13-at-21-07-57-Audiophile.png",
-        "live_url": "https://audio-phile-eight.vercel.app/",
-        "code_url": "https://github.com/kryptcode/audiophile",
-        "rev": true
-    },
-    {
         "id": 5,
         "name": "Kemi Portfolio",
         "description": "Portfolio of a product manager and content writer.",
@@ -19,6 +8,17 @@
         "img": "https://i.ibb.co/LhjjcJX/Screenshot-2023-12-29-at-09-22-11-Adekemi.png",
         "live_url": "https://kemi-zeta.vercel.app",
         "code_url": "",
+        "rev": true
+    },
+    {
+        "id": 1,
+        "name": "Audiophile",
+        "description": "An online shopping application where you can shop for audio devices. It also provides features such as cart management multi-page routing etc.",
+        "bg": "#a7f3d0",
+        "techs": ["Next.js", "Context API", "TailwindCSS"],
+        "img": "https://i.ibb.co/cXbLmBw/Screenshot-2023-12-13-at-21-07-57-Audiophile.png",
+        "live_url": "https://audio-phile-eight.vercel.app/",
+        "code_url": "https://github.com/kryptcode/audiophile",
         "rev": false
     },
     {
