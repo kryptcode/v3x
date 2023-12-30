@@ -252,11 +252,13 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="my-7">
+          <div className='my-7'>
             <a
-              href="../../../Resume-v2.pdf"
-              className="border-[2.4px] font-light p-1.5 px-3 border-black border-l-[4.2px] border-b-[4.2px] hover:bg-black/10 rounded-md"
-              download={"Resume-v2.pdf"}
+              // href="../../../Resume-v2.pdf"
+              href="https://read.cv/koyejo"
+              target="_blank"
+              className={`${darkMode ? 'border-[#999]' : 'border-black'} border-[1.5px] font-light p-1.5 px-3  border-l-[3.5px] border-b-[3.5px] hover:bg-black/10 rounded-md`}
+              // download={"Resume-v2.pdf"}
             >
               <span>View Résumé</span>
             </a>

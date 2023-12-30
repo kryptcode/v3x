@@ -32,13 +32,9 @@ const Card = ({ project }) => {
     <div className={`flex flex-col md:flex-row ${project.rev && 'md:flex-row-reverse'} mb-10 `}>
         <div className={`flex-1  px-5 md:px-0`}>
             <div 
-                className={` `} 
-                // onClick={scrolling}
-                // onClick={() => setscrollStarted(!scrollStarted)}
+                className={``} 
             >
-                <div ref={topEl}  name={'scrolltopId'}></div>
-                <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn`} alt="" />
-                <div ref={bottomEl} name={'scrollId'}></div>
+                <img loading='lazy' src={project.img}  className={`${!darkMode && 'shadow-xl shadow-black/50'} transition-all ease-in-out duration-300 animate__animated animate__zoomIn `} alt="" />
             </div>
                   {/* <div className={`h-[25vh] md:hidden py-1 overflow-y-hidden `}
                 // onClick={() => setscrollStarted(!scrollStarted)}
