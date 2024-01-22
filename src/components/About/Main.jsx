@@ -64,6 +64,8 @@ const Main = () => {
               <div>JavaScript & TypeScript</div>
               <div>React & Vite</div>
               <div>Next.js</div>
+              <div>PHP</div>
+              <div>Laravel</div>
               <div>styled-components</div>
               <div>TailwindCSS</div>
               <div>State Management: Zustand, Recoil etc</div>
@@ -77,6 +79,7 @@ const Main = () => {
               <div>Firebase</div>
               <div>Content Management: Sanity & Strapi</div>
               <div>Prisma</div>
+              <div>MySQL</div>
               <div>MongoDB</div>
             </div>
           </div>
