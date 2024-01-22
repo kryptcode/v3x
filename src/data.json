@@ -15,7 +15,7 @@
         "name": "QClose Inventory",
         "description": "A feature-rich inventory website which combines cutting-edge inventory management, seamless point of sale integration, and convenient in-app chat functionality.",
         "bg": "#a7f3d0",
-        "techs": ["Nextjs", "Zustand", "TailwindCSS", "Recoil"],
+        "techs": ["Next.js", "Zustand", "TailwindCSS","", "Chart.js"],
         "img": "https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png",
         "live_url": "https://qcloseinventory.com",
         "code_url": "",
@@ -57,12 +57,12 @@
     },
     {
         "id": 11,
-        "name": "Cryptid Chronicles",
-        "description": "Embark on a journey into the world of cryptids, where mystery and reality collide. Discover creatures that linger in the shadows of our imagination and explore the untamed territories where folklore comes to life.",
+        "name": "QClose Safety",
+        "description": "Improve organization efficiency and boost operational productivity with our easy-to-use safety reporting software",
         "bg": "#a7f3d0",
-        "techs": ["Nextjs", "Prisma", "TailwindCSS", "MongoDB"],
-        "img": "https://i.ibb.co/CQ96xV2/Screenshot-2023-12-13-at-21-11-20-Cryptids-Finder.png",
-        "live_url": "https://steam-deck.vercel.app/",
+        "techs": ["Vue", "PHP", "Laravel", "MySql", "Javascript"],
+        "img": "https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png",
+        "live_url": "https://qclosesafety.com",
         "code_url": "",
         "rev": false
     }
