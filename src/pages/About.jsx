@@ -1,4 +1,4 @@
-import { useRecoilValue } from 'recoil'
+import { useRecoilState, useRecoilValue } from 'recoil'
 import { darkModeState } from '../atoms'
 import Main from '../components/About/Main'
 import Sidebar from '../components/Sidebar'
@@ -7,9 +7,11 @@ import 'animate.css'
 import { Link } from "react-router-dom";
 // import 'react-creative-cursor/dist/styles.css';
 import AnimatedCursor from "react-animated-cursor"
+import LightToggle from '../components/custom/LightToggle'
 
 const About = () => {
-  const darkMode = useRecoilValue(darkModeState)
+  const [darkMode, setDarkMode] = useRecoilState(darkModeState)
+
 
 
   return (
@@ -76,48 +78,37 @@ const About = () => {
         )
       }
 
-    <div className={` ${darkMode ? 'bg-[#000] text-[#777] ' : 'bg-[#d1bfa7]'} flex flex-col md:flex-row px-4 animate__animated animate__fadeInDown`}>
-      {/* <Cursor 
-          isGelly={true}
-          cursorSize={20}
-          cursorBackgrounColor={darkMode ? '#fff' : '#000'}
-          /> */}
-      <Sidebar />
-      <Main />
-
-      <div className='md:flex-[3] text-[3.5rem] md:text-[4.5rem] leading-none font-bold w-[90%] mx-auto md:w-full hidden md:flex flex-col md:justify-end md:items-center pb-5 animate__animated animate__fadeInRight '>
-      <div className='space-y-5 md:space-y-7'>
-
-      <div className='group transition-all duration-300 ease-in-out'>
-        <Link to='/' className=''>
-          <div>
-            <span className='text-2xl'>
-            01. {' '}
-            </span>
-            <span className={`${darkMode && 'text-[#999] '}`}>
-            HOME
-            </span>
+    <div className={`${darkMode ? 'bg-[#222] text-[#fcfcfc] ' : 'bg-[#d1bfa7] '} min-h-screen animate__animated animate__fadeInDown`}>
+    <div className="w-[90%] mx-auto flex justify-between items-center h-[10vh] ">
+          <div className='text-2xl font-bold hover:opacity-75'>
+          <Link to='/'>
+          KA.  
+          </Link>
           </div>
-          <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
 
-        </Link>
-      </div>
+          <div className={`${darkMode ? '' : '' } hidden font-medium md:flex items-center space-x-8`}>
+            <Link to={'/'} className="group flex flex-col justify-start ">
+              <div className={`${darkMode ? 'group-hover:text-[#d1bfa7]' : ''} pr-3 `}>Home</div>
+              <div className={`${darkMode ? 'bg-[#d1bfa7]' : 'bg-[#222] '} h-[2px] w-0 group-hover:w-full ease-linear transition-all duration-300`} />
+            </Link>
+            <Link to={'/about'} className="group flex flex-col justify-start ">
+              <div className={`${darkMode ? 'group-hover:text-[#d1bfa7]' : ''} pr-3 `}>About</div>
+              <div className={`${darkMode ? 'bg-[#d1bfa7]' : 'bg-[#222] '} h-[2px] w-0 group-hover:w-full ease-linear transition-all duration-300`} />
+            </Link>
+            <Link to={'/projects'} className="group flex flex-col justify-start ">
+              <div className={`${darkMode ? 'group-hover:text-[#d1bfa7]' : ''} pr-3 `}>Projects</div>
+              <div className={`${darkMode ? 'bg-[#d1bfa7]' : 'bg-[#222] '} h-[2px] w-0 group-hover:w-full ease-linear transition-all duration-300`} />
+            </Link>
+            <Link to={'#cv'} className="group flex flex-col justify-start ">
+              <div className={`${darkMode ? 'group-hover:text-[#d1bfa7]' : ''} pr-3 `}>CV</div>
+              <div className={`${darkMode ? 'bg-[#d1bfa7]' : 'bg-[#222] '} h-[2px] w-0 group-hover:w-full ease-linear transition-all duration-300`} />
+            </Link>
 
-      <div className='group transition-all duration-300 ease-in-out'>
-      <Link to='/work' className=''>
-        <div>
-        <span className='text-2xl'>
-          02. {' '}
-          </span>
-          <span className='space-span'>
-          WORK
-          </span>
+            <div className='cursor-pointer hover:opacity-75' onClick={() => setDarkMode(!darkMode)}>
+              <LightToggle />
+            </div>
+          </div>
         </div>
-        <div className={`h-[1px] md:h-[2.5px] w-full transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 ${darkMode ? 'bg-[#999]' : 'bg-black'}`} />
-      </Link>
-      </div>
-      </div>
-    </div>
     </div>
     </>
   )

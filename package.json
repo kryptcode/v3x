@@ -10,7 +10,12 @@
   },
   "dependencies": {
     "@brianmcallister/react-auto-scroll": "^1.1.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "animate.css": "^4.1.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "embla-carousel-react": "^8.0.0-rc22",
+    "lucide-react": "^0.323.0",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.8.1",
     "react-creative-cursor": "^1.2.7",
@@ -21,11 +26,14 @@
     "react-router-dom": "^6.8.2",
     "react-scroll": "^1.8.9",
     "recoil": "^0.7.7",
+    "tailwind-merge": "^2.2.1",
     "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss-animate": "^1.0.7",
     "tsparticles": "^2.9.3",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@types/node": "^20.11.16",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",

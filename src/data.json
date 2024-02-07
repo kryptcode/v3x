@@ -4,7 +4,8 @@
         "name": "Kemi Portfolio",
         "description": "Portfolio of a product manager and content writer.",
         "bg": "#a7f3d0",
-        "techs": ["Next.js", "Framer Motion", "Daisy UI"],
+        "techs": ["Next.js", "Framer Motion", "Daisy UI", "TailwindCSS"],
+        "technologies": ["https://www.svgrepo.com/show/374118/tailwind.svg", "https://www.svgrepo.com/show/354113/nextjs-icon.svg", "https://www.svgrepo.com/show/452207/framer.svg"],
         "img": "https://i.ibb.co/LhjjcJX/Screenshot-2023-12-29-at-09-22-11-Adekemi.png",
         "live_url": "https://kemi-zeta.vercel.app",
         "code_url": "",
@@ -16,6 +17,7 @@
         "description": "A feature-rich inventory website which combines cutting-edge inventory management, seamless point of sale integration, and convenient in-app chat functionality.",
         "bg": "#a7f3d0",
         "techs": ["Next.js", "Zustand", "TailwindCSS","", "Chart.js"],
+        "technologies": ["https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg", "https://www.svgrepo.com/show/374118/tailwind.svg", "https://www.svgrepo.com/show/353729/fastify-icon.svg"],
         "img": "https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png",
         "live_url": "https://qcloseinventory.com",
         "code_url": "",
@@ -27,10 +29,23 @@
         "description": "An online shopping application where you can shop for audio devices. It also provides features such as cart management multi-page routing etc.",
         "bg": "#a7f3d0",
         "techs": ["Next.js", "Context API", "TailwindCSS"],
+        "technologies": ["https://www.svgrepo.com/show/333595/redux.svg", "https://www.svgrepo.com/show/374118/tailwind.svg", "https://www.svgrepo.com/show/354113/nextjs-icon.svg"],
         "img": "https://i.ibb.co/cXbLmBw/Screenshot-2023-12-13-at-21-07-57-Audiophile.png",
         "live_url": "https://audio-phile-eight.vercel.app/",
         "code_url": "https://github.com/kryptcode/audiophile",
         "rev": true
+    },
+    {
+        "id": 11,
+        "name": "QClose Safety",
+        "description": "Improve organization efficiency and boost operational productivity with our easy-to-use safety reporting software",
+        "bg": "#a7f3d0",
+        "techs": ["Vue", "PHP", "Laravel", "MySql", "Javascript"],
+        "technologies": ["https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg", "https://www.svgrepo.com/show/493625/vue-vuejs-javascript-js-framework.svg", "https://www.svgrepo.com/show/452088/php.svg", "https://www.svgrepo.com/show/376332/laravel.svg", "https://www.svgrepo.com/show/303251/mysql-logo.svg", "https://www.svgrepo.com/show/349419/javascript.svg"],
+        "img": "https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png",
+        "live_url": "https://qclosesafety.com",
+        "code_url": "",
+        "rev": false
     },
     {
         "id": 7,
@@ -38,6 +53,7 @@
         "description": "Multi-page website for pastry shop.",
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
+        "technologies": ["https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg", "https://www.svgrepo.com/show/374167/vite.svg", "https://www.svgrepo.com/show/374118/tailwind.svg"],
         "img": "https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png",
         "live_url": "https://pizza-boys.vercel.app/",
         "code_url": "https://github.com/kryptcode/pizza-boys",
@@ -50,20 +66,10 @@
         "description": "Multi-page clone of Steam deck website.",
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
+        "technologies": ["https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg", "https://www.svgrepo.com/show/374167/vite.svg", "https://www.svgrepo.com/show/374118/tailwind.svg"],
         "img": "https://i.ibb.co/7VMnMGN/Screenshot-2023-12-13-at-21-15-28-Vite-React.png",
         "live_url": "https://steam-deck.vercel.app/",
         "code_url": "https://github.com/kryptcode/steam-deck",
         "rev": true
-    },
-    {
-        "id": 11,
-        "name": "QClose Safety",
-        "description": "Improve organization efficiency and boost operational productivity with our easy-to-use safety reporting software",
-        "bg": "#a7f3d0",
-        "techs": ["Vue", "PHP", "Laravel", "MySql", "Javascript"],
-        "img": "https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png",
-        "live_url": "https://qclosesafety.com",
-        "code_url": "",
-        "rev": false
     }
 ]
