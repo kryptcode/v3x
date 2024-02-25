@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
           <div className="flex-1 justify-center items-center hidden md:flex relative ">
             <div className="w-2/3">
-              {/* <img className="w-full" src="https://media.tenor.com/daeUjvb2KGYAAAAi/sunset-sun.gif" alt="" /> */}
+              <img className="w-full" src="https://media.tenor.com/daeUjvb2KGYAAAAi/sunset-sun.gif" alt="" />
               {/* <FaCode className={`${darkMode ? 'text-[#d1bfa7]' : ''} absolute top-10 left-1/3 text-4xl md:text-7xl animate-pulse`} />
 
               <FaReact className={`${darkMode ? 'text-[#d1bfa7]' : ''} absolute top-1/3 right-1/4 text-4xl md:text-7xl animate-pulse`} />
