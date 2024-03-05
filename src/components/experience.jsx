@@ -20,7 +20,7 @@ const Experience = () => {
               <div
                 className={`${darkMode && 'text-[#d1bfa7] group-hover:text-[#222]'} font-medium flex-1 text-xl `}
               >
-                <span>MAY '23</span> - <span>PRESENT</span>{" "}
+                <span>MAY '23</span> - <span>MAR' 2023</span>{" "}
               </div>
               <div className="flex-[2.5] ">
                 <h4
@@ -39,8 +39,7 @@ const Experience = () => {
                       website performance for fast loading times.
                     </li>
                     <li className="">
-                      Utilized frontend frameworks such as React.js to build
-                      dynamic and data-driven web applications.
+                      Utilized frameworks such as Nextjs and Laravel to build dynamic and data-driven web applications.
                     </li>
                     <li className="">
                       Integrated RESTful APIs to fetch and display real-time

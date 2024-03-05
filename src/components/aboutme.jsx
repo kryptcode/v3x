@@ -40,7 +40,7 @@ const AboutMe = () => {
                   <li className="text-sm">
                     Wearing multiple hats as a full-stack engineer at QClose, currently spearheading their inventory management system while contributing to various applications.
                   </li>
-                  <li className="text-sm">Learning GreenSock.</li>
+                  <li className="text-sm">Learning React Native.</li>
                   <li className="text-sm ">Getting deeper into Prisma and Nodejs.</li>
                   <li className="text-sm">Working on MediVault (A Web-Based  Medical Records Application). </li>
                 </ul>
