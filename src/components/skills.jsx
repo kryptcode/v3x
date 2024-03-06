@@ -51,6 +51,7 @@ const Skills = () => {
                 <div>Version Control: Git</div>
                 <div>Restful APIs</div>
                 <div>Thirdweb</div>
+                <div>Figma</div>
               </div>
             </div>
 

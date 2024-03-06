@@ -38,10 +38,11 @@ const AboutMe = () => {
                 <h6 className="text-xl font-semibold mb-2">What I&apos;ve been up to:</h6>
                 <ul className="list-disc pl-5 space-y-4">
                   <li className="text-sm">
-                    Wearing multiple hats as a full-stack engineer at QClose, currently spearheading their inventory management system while contributing to various applications.
+                  I am currently working on a league builder application. This project involves designing and developing a custom application for organizing sports leagues, managing fixtures, and tracking team statistics. 
+                  {/* I am responsible for the entire development process, from conceptualization to implementation, using technologies such as Next.js, React Native, Nodejs and Express. Stay tuned for updates and progress on this exciting project! */}
                   </li>
-                  <li className="text-sm">Learning React Native.</li>
-                  <li className="text-sm ">Getting deeper into Prisma and Nodejs.</li>
+                  <li className="text-sm">Learning React Native and Prototyping.</li>
+                  <li className="text-sm ">Getting deeper into Nodejs and Express.</li>
                   <li className="text-sm">Working on MediVault (A Web-Based  Medical Records Application). </li>
                 </ul>
               </div>
