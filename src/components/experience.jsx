@@ -20,7 +20,7 @@ const Experience = () => {
               <div
                 className={`${darkMode && 'text-[#d1bfa7] group-hover:text-[#222]'} font-medium flex-1 text-xl `}
               >
-                <span>MAY '23</span> - <span>MAR' 2023</span>{" "}
+                <span>MAY '23</span> - <span>MAR '24</span>{" "}
               </div>
               <div className="flex-[2.5] ">
                 <h4
